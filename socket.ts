@@ -20,7 +20,7 @@ let auctionMetaData: AuctionMetaData = {
 biddingItems.push({
     baseAmount: 400,
     currentAmount: 400,
-    name: "Realme GT 700",
+    name: "Telesmati",
     image: "https://fdn2.gsmarena.com/vv/pics/realme/realme-gt-master-2.jpg",
     expireTime: 1649168876606,
     acceptedName: ""
