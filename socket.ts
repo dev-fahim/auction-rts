@@ -49,7 +49,7 @@ export const socketHandler = (socket: SocketApp) => {
     socket.on("bid", (bid) => {
         auctionMetaData.totalBids++;
         if (bid.bidAmount > biddingItems[0].currentAmount) {
-            biddingItems[0].currentAmount = 10;//bid.bidAmount;
+            biddingItems[0].currentAmount = bid.bidAmount;
             biddingItems[0].acceptedName = bid.name;
             bid.isApproved = true;
             acceptedBids.push(bid);
