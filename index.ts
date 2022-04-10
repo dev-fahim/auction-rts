@@ -10,7 +10,7 @@ dotenv.config();
 
 const app: Express = express();
 app.use(cors({
-    origin: ['http://192.168.122.197:4200', 'http://localhost:4200', 'http://10.12.152.153:4200']
+    origin: ['http://192.168.122.197:4200', 'http://localhost:4200', 'http://159.203.27.156:4200']
 }))
 
 const port = process.env.PORT;
@@ -20,7 +20,7 @@ const server = new Server(app);
 
 const io = new SocketIOServer(server, {
     cors: {
-        origin: ['http://192.168.122.197:4200', 'http://localhost:4200', 'http://10.12.152.153:4200']
+        origin: ['http://192.168.122.197:4200', 'http://localhost:4200', 'http://159.203.27.156:4200']
     }
 });
 
